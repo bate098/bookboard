@@ -1,0 +1,14 @@
+services:
+  postgres:
+    image: postgres:17
+    environment:
+      POSTGRES_USER: bookboard
+      POSTGRES_PASSWORD: secret
+      POSTGRES_DB: bookboard
+    ports:
+      - "5432:5432"
+    volumes:
+      - bookboard-data:/var/lib/postgresql/data
+
+volumes:
+  bookboard-data:
