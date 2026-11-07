@@ -7,8 +7,8 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "books")
-public class Book {
+@Table(name = "works")
+public class Work {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -17,9 +17,9 @@ public class Book {
     private String title;
     private String author;
 
-    protected Book() {} //constructor required by JPA?
+    protected Work() {} //constructor required by JPA?
 
-    public Book(String title, String author) {
+    public Work(String title, String author) {
         this.title = title;
         this.author = author;
     }
