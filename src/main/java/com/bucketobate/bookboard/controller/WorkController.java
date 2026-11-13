@@ -1,7 +1,7 @@
 package com.bucketobate.bookboard.controller;
 
 import com.bucketobate.bookboard.model.Work;
-import com.bucketobate.bookboard.model.WorkRequest;
+import com.bucketobate.bookboard.dto.WorkRequest;
 import com.bucketobate.bookboard.service.WorkService;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.DeleteMapping;
